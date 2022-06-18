@@ -1,0 +1,102 @@
+.container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0%;
+}
+
+.header {
+  background-color: green;
+  color: white;
+  font-size: 35px;
+  font-weight: bolder;
+  font-family: "Abril Fatface";
+  margin-bottom: 30px;
+  padding: 15px;
+}
+
+.body {
+  /* background-color: antiquewhite; */
+}
+
+.join-all-div {
+  display: flex;
+}
+
+.left-panel {
+  width: 300px;
+  margin-right: 20px;
+}
+
+.left-panel .box {
+  border: 1px solid black;
+  margin-bottom: 3px;
+  padding: 2px;
+}
+
+.left-panel .box  .category{
+    list-style: none;
+    margin-left: 15px;
+    margin-top: 0px;
+    padding: 0px;
+}
+
+.left-panel .box .category hr{
+    width: 200px;
+    height: 2px;
+    float: left;
+    margin-right: 20px;
+    background-color: gray;
+}
+.left-panel .box input[type="text"] {
+    border: 0px solid black;
+    padding: 0px;
+    margin: auto;
+    width: 98%;
+    height: 30px;
+    outline: none;
+    font-size: 15px;
+}
+.left-panel .box input[type="text"]:focus{
+    border: 0px solid green;
+    background-color: white;
+    padding: 0px;
+    margin: auto;
+    width: 98%;
+    height: 30px;
+}
+
+
+.search {
+    color: gray;
+    box-sizing: border-box;
+    background-color: white;
+    margin: 0em;
+    padding: 1px 6px;
+    border-width: 0px;
+    border-style: outset;
+    border-color: buttonborder;
+    border-image: initial;
+}
+
+.main-content {
+    /* border: 1px solid black; */
+    width: 100%;
+}
+
+.main-content ul {
+    padding: 0px;
+    margin: 0px;
+}
+.main-content li {
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 200px;
+    max-height: fit-content;
+    padding: 0px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 5px black;
+
+}
