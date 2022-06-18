@@ -1,0 +1,279 @@
+<html>
+
+<head>
+    <title>HTML Ex4</title>
+
+    <style>
+        ul {
+            /* border:1px solid; */
+            padding: 0px;
+            text-align: center;
+        }
+
+        li {
+            border: 1px solid;
+            margin: 10px;
+            width: 150px;
+            text-align: center;
+            font: bold 16px 'calibri';
+            padding: 10px;
+            display: inline-block;
+            background-color: black;
+            color: white;
+            text-shadow: 2px 2px 2px red;
+        }
+
+        li:hover {
+            text-shadow: 3px 2px 2px red;
+            cursor: pointer;
+            box-shadow: 3px 3px 5px red;
+            color: yellow;
+        }
+
+        body {
+            background-color: aqua;
+        }
+
+        i {
+            padding: 0px 10px 0px 10px;
+        }
+
+        .even:hover {
+            color: red;
+            text-shadow: 2px 2px 2px grey;
+        }
+
+        .odd:hover {
+            color: yellow;
+            text-shadow: 2px 2px 2px grey;
+        }
+
+        #container {
+            border: 2px solid darkred;
+            margin: 0px 100px 0px 100px;
+            padding: 10px;
+            display: flex;
+        }
+
+        #container p {
+            font: normal 16px 'comic sans ms';
+            text-align: justify;
+        }
+
+
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 500px;
+        }
+
+        th {
+            color: red;
+        }
+
+        th,
+        td {
+            text-align: left;
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        .price{
+            font:normal 16px 'consolas';
+        }
+
+        .select{
+            text-align:center;
+        }
+
+        img{
+            margin:0px 5px 10px 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div>
+        <i class="fa-solid fa-cake-candles odd"></i>
+        <i class="fa-solid fa-burger even"></i>
+        <i class="fa-solid fa-champagne-glasses odd"></i>
+        <i class="fa-solid fa-utensils even"></i>
+        <i class="fa-solid fa-beer-mug-empty odd"></i>
+        <i class="fa-solid fa-blender even"></i>
+        <i class="fa-solid fa-bottle-water odd"></i>
+        <i class="fa-solid fa-martini-glass-citrus even"></i>
+        <i class="fa-solid fa-mug-hot odd"></i>
+        <i class="fa-solid fa-pizza-slice even"></i>
+
+        <i class="fa-solid fa-cake-candles odd"></i>
+        <i class="fa-solid fa-burger even"></i>
+        <i class="fa-solid fa-champagne-glasses odd"></i>
+        <i class="fa-solid fa-utensils even"></i>
+        <i class="fa-solid fa-beer-mug-empty odd"></i>
+        <i class="fa-solid fa-blender even"></i>
+        <i class="fa-solid fa-bottle-water odd"></i>
+        <i class="fa-solid fa-martini-glass-citru evens"></i>
+        <i class="fa-solid fa-mug-hot odd"></i>
+        <i class="fa-solid fa-pizza-slice even"></i>
+
+        <i class="fa-solid fa-cake-candles odd"></i>
+        <i class="fa-solid fa-burger even"></i>
+        <i class="fa-solid fa-champagne-glasses odd"></i>
+        <i class="fa-solid fa-utensils even"></i>
+        <i class="fa-solid fa-beer-mug-empty odd"></i>
+    </div>
+
+    <ul>
+        <a href="./index.html">
+            <li>Famous Restaurent</li>
+        </a>
+        <a href="./order.html">
+            <li>Make Order</li>
+        </a>
+        <a href="#">
+            <li>Address</li>
+        </a>
+        <a href="#">
+            <li>Login/SignUp</li>
+        </a>
+    </ul>
+    <div id="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Code</th>
+                    <th>Menu Name</th>
+                    <th>Price</th>
+                    <th>Stock</th>
+                    <th>Select</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>M0041</td>
+                    <td>Pizza</td>
+                    <td class="price">
+                        <i class="fa-solid fa-indian-rupee-sign"></i>
+                        200
+                    </td>
+                    <td>Available</td>
+                    <td class="select">
+                        <input type="checkbox">
+                    </td>
+                </tr>
+                <tr>
+                    <td>M0042</td>
+                    <td>Burger</td>
+                    <td class="price">
+                        <i class="fa-solid fa-indian-rupee-sign"></i>150
+                    </td>
+                    <td>Available</td>
+                    <td class="select">
+                        <input type="checkbox">
+                    </td>
+                </tr>
+                <tr>
+                    <td>M0043</td>
+                    <td>Coffee</td>
+                    <td class="price">
+                        <i class="fa-solid fa-indian-rupee-sign"></i>50
+                    </td>
+                    <td>Available</td>
+                    <td class="select">
+                        <input type="checkbox">
+                    </td>
+                </tr>
+                <tr>
+                    <td>M0044</td>
+                    <td>Cold Drink</td>
+                    <td class="price">
+                        <i class="fa-solid fa-indian-rupee-sign"></i>100
+                    </td>
+                    <td>Availabe</td>
+                    <td class="select">
+                        <input type="checkbox">
+                    </td>
+                </tr>
+                <tr>
+                    <td>M0045</td>
+                    <td>Ice Cream</td>
+                    <td class="price">
+                        <i class="fa-solid fa-indian-rupee-sign"></i>140
+                    </td>
+                    <td>Available</td>
+                    <td class="select">
+                        <input type="checkbox">
+                    </td>
+                </tr>
+                <tr>
+                    <td>M0045</td>
+                    <td>Sandwich</td>
+                    <td class="price">
+                        <i class="fa-solid fa-indian-rupee-sign"></i>75
+                    </td>
+                    <td>Not Avaialable</td>
+                    <td class="select">
+                        <input type="checkbox">
+                    </td>
+                </tr>
+                <tr>
+                    <td>M0046</td>
+                    <td>Swwt Corns</td>
+                    <td class="price">
+                        <i class="fa-solid fa-indian-rupee-sign"></i>100
+                    </td>
+                    <td>Avaialbe</td>
+                    <td class="select">
+                        <input type="checkbox">
+                    </td>
+                </tr>
+                <tr>
+                    <td>M0047</td>
+                    <td>Butter Scotch</td>
+                    <td class="price">
+                        <i class="fa-solid fa-indian-rupee-sign"></i>145
+                    </td>
+                    <td>Available</td>
+                    <td class="select">
+                        <input type="checkbox">
+                    </td>
+                </tr>
+                <tr>
+                    <td>M0048</td>
+                    <td>Cold Coffee</td>
+                    <td class="price">
+                        <i class="fa-solid fa-indian-rupee-sign"></i>175
+                    </td>
+                    <td>Available</td>
+                    <td class="select">
+                        <input type="checkbox">
+                    </td>
+                </tr>
+                <tr>
+                    <td>M0049</td>
+                    <td>Noodles</td>
+                    <td class="price">
+                        <i class="fa-solid fa-indian-rupee-sign"></i>60
+                    </td>
+                    <td>Available</td>
+                    <td class="select">
+                        <input type="checkbox">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div id="div-2">
+            <img src="https://picsum.photos/id/450/250/150" alt="img-1">
+            <img src="https://picsum.photos/id/550/250/150" alt="img-2">
+        </div>
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/6ca4e8a325.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
