@@ -1,0 +1,14 @@
+Commands
+	npm install jquery bootstrap
+
+
+angular.json file configuration
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.js"
+            ]
+
+style.css
+
+	@import '~bootstrap/dist/css/bootstrap.min.css';
+
