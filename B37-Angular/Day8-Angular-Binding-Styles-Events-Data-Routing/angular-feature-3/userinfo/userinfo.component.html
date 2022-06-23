@@ -1,0 +1,17 @@
+<h3 style="color:red;">User Info Child Component</h3>
+<hr>
+
+<p>Username : {{userobject.username}}</p>
+<p>Email Id : {{userobject.emailid}}</p>
+<p>Location : {{userobject.location}}</p>
+<p>Age : {{userobject.age}}</p>
+
+<div class="row my-2">
+    <div class="col-md-2">
+        <input type="text" value={{color}} class="form-control m-2" #colorName />
+    </div>
+
+    <div class="col-md-2">
+        <input type="button" value="Change Parent Color" class="btn btn-primary m-2" (click)="setColor(colorName.value)">
+    </div>
+</div>

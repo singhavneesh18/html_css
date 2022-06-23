@@ -1,0 +1,62 @@
+<h3 style="color:red;">Property Binding Examples</h3>
+<hr>
+
+<div class="row m-3">
+    <div class="col-md-2">
+        <b>Example1</b>
+    </div>
+
+    <div class="col-md-4">
+        <input type="text" value="Shrenik" class="form-control">
+    </div>
+</div>
+
+<div class="row m-3">
+    <div class="col-md-2">
+        <b>Example2</b>
+    </div>
+
+    <div class="col-md-4">
+        <input type="text" [id]="iduname" value="Shrenik" class="form-control m-1">
+        <input type="text" [id]="idpwd" value="secrete" class="form-control m-1">
+    </div>
+</div>
+
+<div class="row m-3">
+    <div class="col-md-2">
+        <b>Example3</b>
+    </div>
+
+    <div class="col-md-4">
+        <input type="text" [disabled]="isDisabled" class="form-control">
+    </div>
+</div>
+
+
+<div class="row m-3">
+    <div class="col-md-2">
+        <b>Example4</b>
+    </div>
+
+    <div class="col-md-3">
+       <p [class]="pass">Student is pass</p>
+    </div>
+
+    <div class="col-md-3">
+        <p [class]="fail">Student is Fail</p>
+    </div>
+
+    <div class="col-md-3">
+        <p [class.text-warning]="error">Failed to connect Server</p>
+    </div>
+</div>
+
+<div class="row m-3">
+    <div class="col-md-2">
+        <b>Example5</b>
+    </div>
+
+    <div class="col-md-4">
+        <p [ngClass]="myfavclasses">Special Classes</p>
+    </div>
+</div>

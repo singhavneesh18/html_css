@@ -1,0 +1,7 @@
+<h3 [style.color]="childColorName">Parent Component</h3>
+
+<div class="border border-2 border-secondary m-3 p-2">
+
+    <!-- Parent Component passing Parameter to child component -->
+    <app-userinfo [userprofile]="profile" (handleEvent)="acceptColor($event)"></app-userinfo>
+</div>

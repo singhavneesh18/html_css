@@ -1,0 +1,16 @@
+<h3>Angular Template Referencing Eample</h3>
+<hr>
+
+<div class="row m-3">
+    <div class="col-md-2">
+        <b>Example 1</b>
+    </div>
+
+    <div class="col-md-3">
+        <input type="text" #cityName class="form-control m-2" placeholder="City Name">
+    </div>
+
+    <div class="col-md-2">
+        <input type="button" (click)="readCity(cityName.value)" value="Show City" class="btn btn-primary m-2">
+    </div>
+</div>

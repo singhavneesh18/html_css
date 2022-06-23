@@ -1,0 +1,74 @@
+<div class="container-lg justify-content-center d-grid">
+  <div class="card m-4" style="width:40rem">
+    <div class="alert m-2 alert-success" *ngIf="saveFlag">
+      New Employee Created.
+    </div>
+    <div class="card-header">
+      <h1>Employee Profile</h1>
+    </div>
+
+    <div class="card-body">
+      <form #userform="ngForm">
+
+        <div class="row">
+          <div class="col-md-6">
+            <select class="form-select m-2" name="dept">
+              <option>Select Department</option>
+              <option *ngFor="let item of parentDeparments">
+                {{item.deptname}}
+              </option>
+            </select>
+          </div>
+        </div>
+
+
+        <input type="text" placeholder="First Name" class="form-control m-2" name="firstname" ngModel />
+        <input type="text" placeholder="Last Name" class="form-control m-2" name="lastname" ngModel />
+
+        <div class="row">
+          <div class="col">
+            <div class="m-2">
+              <label class="mx-2">Select Gender</label>
+              <input type="radio" value="Male" name="gender" class="form-check-input" id="rmale" ngModel>
+              <label for="rmale" class="mx-2">Male</label>
+
+              <input type="radio" value="Female" name="gender" class="form-check-input" id="rfemale" ngModel>
+              <label for="rfemale" class="mx-2">Female</label>
+            </div>
+          </div>
+
+          <div class="col">
+            <input type="date" class="form-control m-2" name="dob" ngModel>
+          </div>
+        </div>
+
+        <input type="text" class="form-control m-2" placeholder="Street/House/Flat" name="address" ngModel>
+
+        <div class="row">
+          <div class="col">
+            <select class="form-select m-2" name="city" ngModel>
+              <option value="-1">Select City</option>
+              <option *ngFor="let item of cities" value={{item}}>
+                {{item}}
+              </option>
+            </select>
+          </div>
+
+          <div class="col">
+            <select class="form-select m-2" name="experiance" ngModel>
+              <option>Select Experiance</option>
+              <option value="1 year">Less than year</option>
+              <option value="3 year">Less than 3 years</option>
+              <option value="6 year">Less than 6 year</option>
+              <option value="7 year">More than 6 year</option>
+            </select>
+          </div>
+        </div>
+
+        <input type="email" class="form-control m-2" placeholder="Email Id" name="emailid" ngModel>
+        <input type="button" (click)="submitForm(userform)" class="btn btn-success m-2 float-end" value="Save Profile">
+      </form>
+    </div>
+
+  </div>
+</div>
